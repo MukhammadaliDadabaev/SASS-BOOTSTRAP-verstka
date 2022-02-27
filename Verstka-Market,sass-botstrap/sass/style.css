@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url("../Images Egg/header-bg.jpg");
+}
+.hero nav {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+.hero nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero nav ul li {
+  margin-left: 2rem;
+}
+.hero nav ul img {
+  margin-left: 2.5rem;
+}
+.hero .head {
+  margin-top: 7rem;
+}
+.hero .head .banner-title {
+  margin-top: 7rem;
+}
+.hero .head .banner-title .title-icon {
+  margin-top: 5rem;
+}
+.hero .head .banner-title .bg-light {
+  padding: 0.7rem;
+  border-radius: 100%;
+}/*# sourceMappingURL=style.css.map */

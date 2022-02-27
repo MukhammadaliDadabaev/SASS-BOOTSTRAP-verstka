@@ -1,0 +1,198 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+li a {
+  color: #000; }
+  li a:hover {
+    background-color: #D39E00; }
+
+.hero {
+  min-height: 100vh;
+  background: url("../Images Egg/header-bg.jpg"); }
+  .hero nav {
+    width: 100%;
+    margin: auto;
+    padding: 1rem; }
+    .hero nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .hero nav ul li {
+        margin-left: 2rem; }
+        .hero nav ul li a {
+          color: #fff; }
+      .hero nav ul img {
+        margin-left: 2.5rem; }
+  .hero .head {
+    position: relative;
+    margin-top: 7rem; }
+    .hero .head .parag {
+      position: absolute;
+      font-size: 0.7rem;
+      left: 3rem;
+      top: 7rem;
+      transform: rotate(-90deg); }
+    .hero .head .banner-title {
+      margin-top: 7rem; }
+      .hero .head .banner-title .title-icon {
+        margin-top: 5rem; }
+      .hero .head .banner-title .bg-light {
+        padding: 0.7rem;
+        border-radius: 100%; }
+    .hero .head .links {
+      position: absolute;
+      top: 1rem;
+      right: 10rem; }
+      .hero .head .links ul {
+        list-style: none; }
+        .hero .head .links ul li {
+          margin: 1.5rem; }
+          .hero .head .links ul li button {
+            border-radius: 50%;
+            border: 0.5px solid #555;
+            outline: none; }
+            .hero .head .links ul li button:hover {
+              border: 2px solid blue; }
+            .hero .head .links ul li button i {
+              padding: 0.3rem;
+              font-size: 0.7rem;
+              color: #fff; }
+
+.card-img {
+  position: relative; }
+  .card-img .colsa {
+    width: 60%;
+    position: absolute;
+    left: 55%;
+    top: 12%; }
+
+.card-bg {
+  min-height: 80vh;
+  background-image: url("../Images Egg/specialty's-bg.jpg");
+  background-repeat: no-repeat; }
+  .card-bg .card-image {
+    position: relative;
+    right: 7%; }
+    .card-bg .card-image .img-col {
+      width: 60%;
+      position: absolute;
+      right: 63%;
+      top: 12%; }
+
+.card-bg-2 {
+  min-height: 90vh;
+  background-image: url("../Images Egg/specialty's-bg-1.jpg");
+  background-repeat: no-repeat; }
+  .card-bg-2 .card-image {
+    position: relative; }
+    .card-bg-2 .card-image .img-col {
+      width: 60%;
+      position: absolute;
+      right: 75%;
+      top: 12%; }
+
+.card-group {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 230px); }
+  .card-group .card-1 {
+    width: 90%;
+    display: flex;
+    justify-content: center; }
+    .card-group .card-1 .text-card {
+      width: 80%;
+      margin-left: 1.5rem;
+      text-align: left; }
+      .card-group .card-1 .text-card p {
+        font-size: 0.7rem;
+        color: #999; }
+
+.bg-img6 {
+  min-height: 100vh;
+  background-image: url("../Images Egg/specialty's-bg-2.jpg");
+  background-size: cover; }
+  .bg-img6 .parag {
+    margin-top: 7rem;
+    padding-bottom: 1.5rem;
+    color: #555; }
+  .bg-img6 .card-imagrig {
+    position: relative;
+    left: 4rem;
+    top: 4rem; }
+    .bg-img6 .card-imagrig img {
+      width: 60%;
+      height: 425px; }
+    .bg-img6 .card-imagrig .img-col {
+      width: 60%;
+      height: 360px;
+      position: absolute;
+      right: 75%;
+      top: 8%; }
+  .bg-img6 .card-imglef {
+    position: relative;
+    left: 9rem;
+    top: 4rem; }
+    .bg-img6 .card-imglef img {
+      width: 60%;
+      height: 425px; }
+    .bg-img6 .card-imglef .colsa {
+      width: 60%;
+      height: 360px;
+      position: absolute;
+      left: 25%;
+      top: 8%; }
+
+@media screen and (max-width: 768px) {
+  .parag {
+    display: none; }
+
+  .links {
+    display: none; }
+
+  .card-group {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr); }
+    .card-group .card-1 {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .card-group .card-1 .text-card {
+        width: 100%;
+        margin: 1.5rem; } }
+@media screen and (max-width: 468px) {
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .card-group .card-1 {
+      width: 100%; }
+      .card-group .card-1 .text-card {
+        width: 65%;
+        margin: 1.5rem; } }
+@media screen and (max-width: 375px) {
+  .card-group
+  .card-1
+  .text-card {
+    width: 75%;
+    margin: 1.5rem; } }
+@media screen and (max-width: 290px) {
+  .card-group
+  .card-1
+  .text-card {
+    width: 100%;
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

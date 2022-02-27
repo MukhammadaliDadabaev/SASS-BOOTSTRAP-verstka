@@ -1,0 +1,259 @@
+// SASS Variable
+
+// global styles
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+li a {
+  color: #000;
+  &:hover {
+    background-color: #D39E00;
+  }
+}
+// header styles
+.hero {
+  min-height: 100vh;
+  background: url("../Images Egg/header-bg.jpg");
+  nav {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        margin-left: 2rem;
+        a {
+          color: #fff;
+        }
+      }
+      img {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  .head {
+    position: relative;
+    margin-top: 7rem;
+    .parag {
+      position: absolute;
+      font-size: 0.7rem;
+      left: 3rem;
+      top: 7rem;
+      transform: rotate(-90deg);
+    }
+    .banner-title {
+      margin-top: 7rem;
+      .title-icon {
+        margin-top: 5rem;
+      }
+      .bg-light {
+        padding: 0.7rem;
+        border-radius: 100%;
+      }
+    }
+    .links {
+      position: absolute;
+      top: 1rem;
+      right: 10rem;
+      ul {
+        list-style: none;
+        li {
+          margin: 1.5rem;
+          button {
+            border-radius: 50%;
+            border: 0.5px solid #555;
+            outline: none;
+            &:hover {
+              border: 2px solid blue;
+            }
+            i {
+              padding: 0.3rem;
+              font-size: 0.7rem;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// section styles 
+  .card-img {
+    position: relative;
+    .colsa {
+      width: 60%;
+      position: absolute;
+      left: 55%;
+      top: 12%;
+    }
+  }
+// section 2 styles
+.card-bg {
+  min-height: 80vh;
+  background: {
+    image: url("../Images Egg/specialty's-bg.jpg");
+    repeat: no-repeat;
+  }
+  .card-image {
+    position: relative;
+    right: 7%;
+    .img-col {
+      width: 60%;
+      position: absolute;
+      right: 63%;
+      top: 12%;
+    }
+  } 
+}
+// sections 4 styles
+.card-bg-2 {
+  min-height: 90vh;
+  background: {
+    image: url("../Images Egg/specialty's-bg-1.jpg");
+    repeat: no-repeat;
+  }
+   .card-image {
+    position: relative;
+    .img-col {
+      width: 60%;
+      position: absolute;
+      right: 75%;
+      top: 12%;
+    }
+  } 
+}
+// section 5 styles
+.card-group {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 230px);
+  .card-1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    .text-card {
+      width: 80%;
+      margin-left: 1.5rem;
+      text-align: left;
+      p {
+        font-size: 0.7rem;
+        color: #999;
+      }
+    }
+  }
+}
+// section 6 styles
+.bg-img6 {
+  min-height: 100vh;
+  background-image: url("../Images Egg/specialty's-bg-2.jpg");
+  background-size: cover;
+  .parag {
+    margin-top: 7rem;
+    padding-bottom: 1.5rem;
+    color: #555;
+  }
+  .card-imagrig {
+    position: relative;
+    left: 4rem;
+    top: 4rem;
+    img {
+      width: 60%;
+      height: 425px;
+    }
+    .img-col {
+      width: 60%;
+      height: 360px;
+      position: absolute;
+      right: 75%;
+      top: 8%;
+    }
+  }
+  .card-imglef {
+    position: relative;
+    left: 9rem;
+    top: 4rem;
+    img {
+      width: 60%;
+      height: 425px;
+    }
+    .colsa {
+      width: 60%;
+      height: 360px;
+      position: absolute;
+      left: 25%;
+      top: 8%;
+    }
+  }
+}
+
+// media Responsive
+@media  screen and (max-width: 768px) {
+  .parag {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .card-group {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  .card-1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .text-card {
+      width: 100%;
+      margin: 1.5rem;
+    }
+  }
+}
+}
+
+@media  screen and (max-width: 468px) {
+  .card-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  .card-1 {
+    width: 100%;
+    .text-card {
+      width: 65%;
+      margin: 1.5rem;
+    }
+  }
+}
+}
+
+@media  screen and (max-width: 375px) {
+  .card-group 
+  .card-1 
+  .text-card {
+    width: 75%;
+    margin: 1.5rem;
+  }
+}
+
+@media  screen and (max-width: 290px) {
+  .card-group 
+  .card-1 
+  .text-card {
+    width: 100%;
+    text-align: center;
+  }
+}
+
